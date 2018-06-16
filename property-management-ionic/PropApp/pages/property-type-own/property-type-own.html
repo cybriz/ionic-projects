@@ -1,0 +1,54 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Own</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding *ngFor="let item of itemDisplayArray">
+  <h2>{{item.name}}</h2>
+  <p>{{item.date}}</p>
+  <ion-slides pager="true" paginationType="bullets">
+    <ion-slide  *ngFor="let pic of morePics">
+      <img [src]=pic>
+    </ion-slide>
+  </ion-slides> 
+  <p>Address: </p>
+  <p>{{item.address}}</p>
+  <br>
+  <p>Facilities</p>
+  <p>Swimming pool, gym, hall</p>
+  <ion-row>
+    <ion-col>
+      <p>My Unit</p>
+      <p>C-10-9</p>
+    </ion-col>
+    <ion-col>
+      <button ion-button>BluePrint</button>
+    </ion-col>
+  </ion-row>
+  <button ion-button large block>Ownership Documents</button>
+  <p>Status: </p>
+  <br>
+  <ion-card>
+    <ion-card-header>
+      Management
+    </ion-card-header>
+    <ion-card-content>
+      The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+    </ion-card-content>
+    <button class="message" ion-button block>Message</button>
+  </ion-card>
+  <br>
+  <ion-card>
+    <ion-card-header>
+      Developer
+    </ion-card-header>
+    <ion-card-content>
+      The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+    </ion-card-content>
+    <button class="message" ion-button block>Message</button>
+  </ion-card>
+</ion-content>
+

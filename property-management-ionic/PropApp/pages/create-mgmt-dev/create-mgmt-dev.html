@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons end>
+      <button ion-button round (click)="next()">
+        Next
+      </button>
+    </ion-buttons>
+    <ion-title>New Account(2/3)</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div>
+  <span style="  font-size:1.9rem; margin-left:80px">Create a {{pagename}}</span>
+</div>
+<br>
+  <ion-item>
+      <ion-label floating style='color:dimgrey; '>{{pagename}} Name</ion-label>
+    <ion-input type="text" [(ngModel)]="management.name"></ion-input>
+  </ion-item>
+  <button ion-button block color='light'  class=btselect style='font-size:1.3rem;' (click)="currentlocation()" icon-start>
+      <ion-icon ios="ios-pin-outline" style= 'margin-left:5px;' ></ion-icon>
+      Use My Current Location
+      
+  </button>
+  
+  <br>
+  
+  <button ion-button  block color='light'  placeholder= "Select Country"  id='country' class=btselect style='font-size:1.3rem' (click)="selectCountry()" >
+    <ion-label placeholder="Select"> {{ data }}</ion-label>
+  </button>
+ 
+  <button ion-button  block color='light'   class=btselect style='font-size:1.3rem' (click)="selectState()" >
+    <ion-label> {{ state }}</ion-label>
+  </button>
+  
+<br>
+<div >
+  <div ng-app=''>
+  <ion-item>
+    <ion-input  placeholder="Post Code " [(ngModel)]="management.postcode" id='postal_code'>{{management.postcode}}</ion-input>
+  </ion-item>
+  <ion-item >
+    <ion-input  type="text" placeholder="Town" id='locality' [(ngModel)]="management.town">{{management.town}}</ion-input>
+  </ion-item>
+  <ion-item >
+      <ion-input  type="text" placeholder="Street 1" id='street_number'[(ngModel)]="management.streetone">{{management.streetone}}</ion-input>
+    </ion-item>
+    <ion-item >
+        <ion-input  type="text" placeholder="Street 2" id='administrative_area_level_1' [(ngModel)]="management.streettwo">{{management.streettwo}}</ion-input>
+      </ion-item>
+      <br>
+      <br>
+      <br>
+  <ion-item>
+    <ion-input  placeholder="Company Phone Number" [(ngModel)]="management.phone"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input type="email" placeholder="Company Email" [(ngModel)]="management.email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input type="text" placeholder="Company Website" [(ngModel)]="management.website"></ion-input>
+  </ion-item>
+</div>
+</div>
+</ion-content>

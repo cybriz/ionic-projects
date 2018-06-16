@@ -1,0 +1,35 @@
+<ion-content padding>
+  <br>
+  <br>
+
+  <div style="text-align:center">
+    <span class="title">Property</span>
+    <br>
+    <span class="title2">Manager</span>
+  </div>
+  <br>
+  <br>
+  <br>
+  <form [formGroup]="rForm">
+    <ion-item>
+      <ion-label floating>Email Address</ion-label>
+      <ion-input type="email" formControlName="email1" [(ngModel)]="user.email" (blur)="stringTrim(user.email)"></ion-input>
+
+    </ion-item>
+    <div class="alert" *ngIf="!rForm.controls['email1'].valid && rForm.controls['email1'].touched"> Email is invalid </div>
+  </form>
+
+  <ion-item>
+    <ion-label floating>Password</ion-label>
+    <ion-input class="input" type="password" [(ngModel)]="user.password" (blur)="trimString(user.password)"> </ion-input>
+  </ion-item>
+
+  <button ion-button block (click)="login(user)" style="font-size:1.9rem">Login</button>
+  <div style="text-align:center">
+    <br>
+    <button class="forgotpws" (click)="forgotPass(user)">Forgot password</button>
+    <br>
+    <br>
+    <button ion-button block (click)="register(user)" style="font-size:1.9rem">Register</button>
+  </div>
+</ion-content>

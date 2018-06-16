@@ -1,0 +1,56 @@
+<ion-header>
+
+  <ion-navbar no-border-bottom>
+    <ion-title>New Account (3/3)</ion-title>
+    <ion-buttons end>
+      <button ion-button round (click)="create()">
+        Create
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content >
+
+    <ion-item-divider color="light">Summary</ion-item-divider>
+
+    <ion-item line>
+      <h3 style= 'text-align:left;'>Email</h3>
+      <p>{{email}}</p>
+    </ion-item>
+
+    <ion-item>
+      <h3 style= 'text-align:left;'>Phone Number</h3>
+      <p>{{phone}}</p>
+    </ion-item>
+
+    <ion-item>
+      <h3 style= 'text-align:left;'>Name</h3>
+      <p>{{username}}</p>
+    </ion-item>
+
+    <ion-item>
+      <h3 style= 'text-align:left;'>Company Email</h3>
+      <p>{{companyemail}}</p>
+    </ion-item>
+
+    <ion-item>
+      <h3 style= 'text-align:left;'>Company Website</h3>
+      <p>{{companywebsite}}</p>
+    </ion-item>
+
+    <ion-item>
+      <h3 style= 'text-align:left;'>Company Phone Number</h3>
+      <p>{{companyphone}}</p>
+    </ion-item>
+    <ion-item>
+      <h3 style= 'text-align:left;'>{{name}} Name</h3>
+      <p>{{companyname}} </p>
+     <br>
+      <p>{{name}} Address</p>
+      <p>{{street1}}{{street2}}</p>
+      <p>{{town}}{{postcode}}{{state}}</p>
+      <p>{{country}}</p>
+    </ion-item>
+</ion-content>

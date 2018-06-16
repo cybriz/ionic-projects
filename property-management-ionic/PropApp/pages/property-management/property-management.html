@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-navbar showBackButton>
+      <ion-title>
+        <span>Start</span>
+      </ion-title>
+      <ion-buttons end>
+        <button ion-button color="primary" (click)="nextButton()">
+          <span>Next</span>
+        </button>
+      </ion-buttons>
+    </ion-navbar>
+  </ion-header>
+  
+  
+  <ion-content padding>
+    <div class='bigButton'>
+      <span>I manage this place since</span>
+
+      <button ion-button icon-right block class='threeButton' (click)="picker.open()" style="font-size:1.9rem">
+        <ion-datetime #picker max="2025-12-31" [(ngModel)]="defaultDate"></ion-datetime>
+        <ion-icon name="calendar"></ion-icon>
+      </button>
+  
+    </div>
+  
+  </ion-content>

@@ -1,0 +1,33 @@
+<ion-header>
+        <ion-navbar>
+          <ion-buttons end>
+            <button ion-button round (click)="next()" >
+              Next
+            </button>
+          </ion-buttons>
+          <ion-title>New Account(2/3)</ion-title>
+        </ion-navbar>
+      </ion-header>
+      
+      
+      <ion-content >
+          <ion-searchbar placeholder= {{search}} (ionCancel)="onClear($event)"  (ionInput)="filterItems($event)" 
+            [(ngModel)]="this.selectedItems">{{selectedItems}}
+          </ion-searchbar>
+        <button ion-button class="search" full style='margin-top:0px; font-size:1.5rem; margin-left:10px; border-bottom: 1px solid lightgrey ' (click)= "createDevMgtPage()" icon-start >
+          <ion-icon  style= 'margin-right:15px;' name="add"></ion-icon>
+             Or create a {{orcreate}}
+          </button>        
+        <ion-list  class= 'virtualscroll' [virtualScroll]="items" >
+          
+          <button ion-item detail-none style="border-bottom: 1px solid grey ; height:10px ;" (click)="SelectChangeHandler($event)"  *virtualItem = "let item">
+                {{ item }}
+            
+            
+          </button>
+          <div style = 'text-align:center;' id="noresultsfound"*ngIf="items.length === 0"  >
+              <ion-icon name="warning"></ion-icon>No Results Found</div>
+  
+          </ion-list>
+          
+      </ion-content>

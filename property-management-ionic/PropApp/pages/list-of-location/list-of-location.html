@@ -1,0 +1,52 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-searchbar placeholder="Search for an address" showCancelButton="true" (ionCancel)="onClear($event)" color="danger" 
+    (ionInput)="filterItems($event)" [(ngModel)]="this.selectedItems">{{selectedItems}}
+    </ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <button ion-item detail-none *ngFor="let item of items" id="Input" (click)="SelectChangeHandler($event)">
+      {{ item }}
+    </button>
+  </ion-list>
+</ion-content> -->
+
+<ion-header>
+  <ion-navbar showBackButton>
+    <ion-title>
+      <span>Property</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-toolbar>
+      <ion-searchbar placeholder="Search for an address" showCancelButton="true" (ionCancel)="onClear($event)" color="danger" (ionInput)="filterItems($event)"
+        [(ngModel)]="this.selectedItems">{{selectedItems}}
+      </ion-searchbar>
+
+    </ion-toolbar>
+  </ion-list>
+
+  <button class="button2" ion-button large block item-end icon-left (click)="directToMap()">
+    <ion-icon name="ios-pin-outline"></ion-icon> Or Select from Map
+  </button>
+
+  <ion-list>
+    <button class="button1" ion-item detail-none *ngFor="let item of itemss" id="Input" (click)="SelectChangeHandler($event)">
+      {{ item }}
+      <ion-icon style="float:right" name="ios-pin-outline"></ion-icon>
+    </button>
+  </ion-list>
+
+  <ion-infinite-scroll (ionInfinite)="doInfinite($event)" >
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more data..." >
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+
+  <h2 id="errMsg"><ion-icon style="margin-right:1px" ios="ios-warning" md="md-warning" *ngIf="itemss.length === 0"></ion-icon>No result found, try selecting from Map</h2> 
+</ion-content>

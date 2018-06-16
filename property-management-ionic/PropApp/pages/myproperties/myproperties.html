@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons end>
+      <button ion-button round (click)="create()">
+
+      </button>
+    </ion-buttons>
+    <ion-title>My Properties</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <div>
+    <span>You do not have any property</span><br>
+    <span> yet, please add them first</span>
+</div>
+    <br>
+    <br>
+    <br>
+  <div style='margin-left:80px;'>
+  <button ion-button color='light' class=btselect style='font-size:1.3rem' (click)="selectCountry()">
+    <ion-label>Add for owner/renter</ion-label>
+  </button><br>
+  <button ion-button  color='light' class=btselect style='font-size:1.3rem' (click)="selectCountry()">
+    <ion-label>Add for management</ion-label>
+  </button><br>
+  <button ion-button  color='light' class=btselect style='font-size:1.3rem' (click)="selectCountry()">
+    <ion-label>Add for developer</ion-label>
+  </button>
+</div>
+</ion-content>
+

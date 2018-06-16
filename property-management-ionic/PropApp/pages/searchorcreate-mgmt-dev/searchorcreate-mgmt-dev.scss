@@ -1,0 +1,43 @@
+ion-searchbar.searchbar-ios {
+    background-color: transparent;
+}
+
+.search{
+    background-color:white;
+    color: black;
+    .button-inner {
+        justify-content: left !important;
+      }
+    
+      .button1 {
+        margin-top: 0rem !important;
+        border-bottom-width: 0.1rem !important;
+        border-bottom-color: rgb(196, 196, 196) !important;
+        border-bottom-style: solid;
+      }
+    
+      .list-ios {
+        margin: 0px !important;
+      }
+    
+      .button-ios,
+      .button-md {
+        color: rgb(8, 8, 8) !important;
+        background-color: #ffffff !important;
+      }
+
+    
+}
+
+
+ion-searchbar {
+  .button{
+      margin-top: 0rem;
+  }
+}
+
+.virtualscroll{
+  .item-block:first-child {
+     border-top: 0.55px solid #ffffff; 
+}
+}

@@ -1,0 +1,87 @@
+<ion-header>
+  <ion-toolbar>
+
+    <ion-title>
+      <span>My Properties</span>
+      <br>
+      <span class="subtitle">Own</span>
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button color="primary" (click)="addButton()">
+        <span class="addbutton">+</span>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-segment [(ngModel)]="appType">
+      <ion-segment-button value="Own">
+        Own
+      </ion-segment-button>
+      <ion-segment-button value="Rent">
+        Rent
+      </ion-segment-button>
+      <ion-segment-button value="Interested">
+        Interested
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="empty" *ngIf="cardsData['Own'][0].address.length === 0">
+    <br>
+    <br>
+    <span>
+      <b>You do not have any property</b>
+    </span>
+    <br>
+    <span>
+      <b>yet, please add them first </b>
+    </span>
+  </div>
+
+  <div [ngSwitch]="appType" *ngIf="cardsData['Own'][0].address.length > 0">
+    <ion-list-header>{{ appType }}</ion-list-header>
+    <button class="cardButton" *ngSwitchCase="'Own'" (click)="pushToTypeOwn()">
+      <ion-card class="cardExist" *ngFor="let item of getItems(appType)">
+        <ion-grid>
+          <ion-row align-items>
+            <ion-col>
+              <h2>{{item.name}}</h2>
+            </ion-col>
+            <ion-col>
+              <button icon-left small>
+                <ion-icon name="ios-paper"> Managed</ion-icon>
+              </button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+        <ion-grid>
+          <ion-row align-items>
+            <ion-col>
+              <ion-avatar item-start>
+                <img [src]=item.picLink>
+              </ion-avatar>
+            </ion-col>
+
+            <ion-col class="alignment">
+              <p>Address: </p>
+              <p>{{item.address}}</p>
+              <br>
+              <p>Since: {{item.date}}</p>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card>
+    </button>
+  </div>
+
+  <div [ngSwitch]="appType" *ngIf="cardsData['Own'][0].address.length > 0">
+    <button *ngSwitchCase="'Rent'">hi</button>
+  </div>
+
+  <div [ngSwitch]="appType" *ngIf="cardsData['Own'][0].address.length > 0">
+    <button *ngSwitchCase="'Interested'">hello</button>
+  </div>
+</ion-content>

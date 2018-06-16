@@ -1,0 +1,34 @@
+<ion-header>
+    <ion-navbar no-border-bottom>
+      <ion-title>Select State </ion-title>
+      <ion-buttons start>
+        <button ion-button (click)='dismiss()' >
+            <span ion-text color="primary" >Cancel</span>
+        </button>
+      </ion-buttons>
+    </ion-navbar>
+  </ion-header>
+  <ion-content>
+  
+    <ion-list>
+      <ion-toolbar no-border-top>
+        <ion-searchbar  placeholder="Type state name here" showButton="true" (ionCancel)="onClear($event)"  (ionInput)="filterItems($event)"
+          [(ngModel)]="this.selectedItems" >{{selectedItems}}
+          
+      </ion-searchbar>
+      <ion-buttons end>
+          <button ion-button (click)='usethis()'>
+            use this
+          </button>
+        </ion-buttons>
+      </ion-toolbar>
+      <ion-list class= 'virtualscroll' [virtualScroll]="items" >
+          <button ion-item detail-none style="border-bottom: 1px solid grey ; height:10px ;" (click)="SelectChangeHandler($event)"  *virtualItem = "let item">
+              {{ item }}
+        </button>
+    </ion-list>
+    </ion-list>
+  
+  </ion-content>
+  
+   

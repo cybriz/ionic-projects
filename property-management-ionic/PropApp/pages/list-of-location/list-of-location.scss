@@ -1,0 +1,38 @@
+page-list-of-location {
+  .button-inner {
+    justify-content: left;
+  }
+
+
+  .button2 {
+    margin-top: 0rem;
+    border-bottom-width: 0.1rem;
+    border-color: rgb(10, 10, 10);
+    border-bottom-style: solid;
+  }
+
+  .list-ios {
+    margin: 0px;
+  }
+
+  .button-ios,
+  .button-md {
+    color: rgb(20, 20, 20);
+    background-color: #ffffff;
+  }
+  .toolbar .searchbar-ios .searchbar-input {
+    background: rgb(255, 255, 255);
+}
+.toolbar .searchbar-ios{
+  background-color: white;
+}
+.toolbar-ios {
+  padding: 0px;
+  border-bottom: 1px solid;
+  border-color:grey;
+}
+  #errMsg {
+    text-align: center;
+    display:none;
+  }
+}

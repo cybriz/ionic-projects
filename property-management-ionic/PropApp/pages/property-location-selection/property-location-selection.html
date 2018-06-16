@@ -1,0 +1,19 @@
+<ion-content>
+  <div #map id="map"></div>
+  <input id="pac-input" class="controls" type="text" placeholder="Search...">
+</ion-content>
+
+<div id="buttonInsideImage">
+  <ion-footer>
+    <ion-row>
+      <ion-col>
+        <button no-margin ion-button block large class="my-width1" (click)="buttonCancel()">
+          Cancel</button>
+      </ion-col>
+      <ion-col>
+        <button no-margin ion-button block large class="my-width2" color="primary" (click)="buttonConfirm()">
+          Confirm</button> 
+      </ion-col>
+    </ion-row>
+  </ion-footer>
+</div> 

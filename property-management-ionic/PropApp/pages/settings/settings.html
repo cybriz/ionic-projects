@@ -1,0 +1,84 @@
+<ion-content padding>
+  <h4>Settings</h4>
+  <div class="displayNotif">
+  <p>Display notification for:</p>
+  </div>
+  <div>
+    <ion-item>
+      <ion-label>
+        <span class="message">Each Message From Management</span>
+      </ion-label>
+      <ion-toggle color="secondary" [(ngModel)]="checked1"></ion-toggle>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        <span class="message">Each Message From Community</span>
+      </ion-label>
+      <ion-toggle color="secondary" [(ngModel)]="checked2"></ion-toggle>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        <span class="message">Updates on Interested properties</span>
+      </ion-label>
+      <ion-toggle color="secondary" [(ngModel)]="checked3"></ion-toggle>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        <span class="message">Updates on my properties</span>
+      </ion-label>
+      <ion-toggle color="secondary" [(ngModel)]="checked4"></ion-toggle>
+    </ion-item>
+  </div>
+
+
+  <div class="tableStyle">
+    <h5>My Profile</h5>
+    <br>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          Name
+        </ion-col>
+        <ion-col>
+          John Smith
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          Email
+        </ion-col>
+        <ion-col>
+          Johnsmith@mail.com
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          Phone Number
+        </ion-col>
+        <ion-col>
+          12876123121
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+
+  <button ion-button block>Update Profile</button>
+
+  <button ion-button block>Change Password</button>
+  <br>
+  <button ion-button block (click)="logout()">Log out</button>
+  
+  <h4> App Version: 1.0</h4>
+  
+
+  <button ion-button block>Privacy Policy</button>
+  <button ion-button block>Terms And Conditions</button>
+</ion-content>

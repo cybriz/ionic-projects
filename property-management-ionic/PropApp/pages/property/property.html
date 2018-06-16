@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar showBackButton>
+    <ion-title>
+      <span>Property</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <!-- <ion-item>
+      <ion-label>
+        <ion-icon name="md-search"></ion-icon>
+      </ion-label>
+      <ion-input (click)="directToListOfLocation()" placeholder="Property Name or Address" [(ngModel)]="this.solution">{{solution}} 
+      </ion-input>
+    </ion-item> -->
+    <ion-toolbar>
+      <ion-searchbar id="home-search" placeholder="Property Name or Address" [showCancelButton]="true"  color="danger"
+        (ionInput)="filterItems($event)" [(ngModel)]="this.selectedItems">{{selectedItems}}
+      </ion-searchbar>
+    </ion-toolbar>
+
+    <button class="button1" ion-button large block item-end icon-left (click)="directToMap()">
+      <ion-icon name="ios-pin-outline"></ion-icon> Or Select from Map
+    </button>
+  </ion-list>
+  
+  <ion-list>
+
+      <button class="buttonForItem" block large detail-none *ngFor="let item of printItOut" (click)="SelectChangeHandler($event, item)"> 
+        <h6 class="htmlEdit0"> {{ item.name }} </h6>   
+        <span class="htmlEdit"> {{ item.addressStreet1 }}{{item.addressStreet1 !== '' ? ', ' : '' }}{{item.addressStreet2 }}{{item.addressStreet2 !== '' ? ', ' : '' }} <br>
+          {{ item.postcode }}{{item.postcode !== '' ? ', ' : '' }} {{ item.town }}{{item.town !== '' ? ', ' : '' }} <br>
+          {{item.state }}{{item.state !== '' ? ', ' : '' }} {{ item.country }} </span>  
+       <!-- <ion-icon (click)="pinMarker($event, item)" name="ios-pin-outline" style="float:right; margin-right:3rem; font-size:20px;"></ion-icon>  -->
+      </button> 
+   
+  </ion-list>
+  <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+      <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more data...">
+      </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+
+    <div style = 'text-align:center;' id="noresultsfound" *ngIf="printItOut.length === 0"  >
+      <ion-icon name="warning"></ion-icon>No result found, try selecting from Map</div>
+</ion-content>  

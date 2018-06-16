@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons end>
+      <button ion-button round (click)="changepage()" [disabled]="!rForm.valid">
+        {{button}}
+      </button>
+    </ion-buttons>
+    <ion-title>New Account{{pagenum}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form [formGroup]="rForm">
+    <span style='font-size:1.9rem; margin-left:5%; color:dimgray'> Account Type</span>
+
+    <div>
+      <ion-card>
+        <ion-card-header>
+          {{userData}}
+        </ion-card-header>
+        <ion-card-content>
+          {{userInfo}}
+        </ion-card-content>
+      </ion-card>
+    </div>
+    <br>
+    <br>
+    <div>
+    <span style='font-size:1.9rem; margin-left:5%; color:black'> Your Personal Information:</span>
+    <ion-item >
+      <ion-label floating style='color:dimgrey; '>{{emailadd}}</ion-label>
+      <ion-input type="email" formControlName="email" [(ngModel)]="user.email" required [email]=" email!='' " ></ion-input>
+    </ion-item>
+    <div class="alert" *ngIf="rForm.controls['email'].errors?.email && rForm.controls['email'].touched" full> Email is invalid </div>
+    <span style='font-size:1.2rem; margin-left:5%; color:grey'> This will be your your username</span> 
+
+    <ion-item>
+      <ion-label floating style='color:dimgrey'>Password</ion-label>
+      <ion-input type="password" formControlName="password" [(ngModel)]="user.password" required name="password"></ion-input>
+    </ion-item>
+    <div class="alert" *ngIf="!rForm.controls['password'].valid && rForm.controls['password'].touched" full> Password is invalid</div>
+
+    <ion-item>
+      <ion-label floating style='color:dimgrey'>Mobile Phone</ion-label>
+      <ion-input formControlName="phone" [(ngModel)]="user.phone"></ion-input>
+    </ion-item>
+    <div class="alert" *ngIf="!rForm.controls['phone'].valid && rForm.controls['phone'].touched"> Please enter at least 7 digit number</div>
+
+    <ion-item>
+      <ion-label floating style='color:dimgrey'>Full Name</ion-label>
+      <ion-input type="name" formControlName="name" [(ngModel)]="user.name"></ion-input>
+    </ion-item>
+    <div class="alert" *ngIf="!rForm.controls['name'].valid && rForm.controls['name'].touched"> Please enter at least 4 characters</div>
+</div>
+  </form>
+</ion-content>

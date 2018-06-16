@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar showBackButton>
+    <ion-title>
+      <span>Property Type</span>
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button color="primary" (click)="nextButton()">
+        <span>Next</span>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <div class='bigButton'>
+    <span>I</span>
+    <button class='threeButton' id="own" value="{{sections.own}}" (click)="passingOwn($event)" ion-button block style="font-size:1.9rem">Own</button>
+    <br>
+    <span> or</span>
+    <button class='threeButton' id="rent" value="{{sections.rent}}" (click)="passingRent($event)" ion-button block style="font-size:1.9rem">Rent</button>
+    <br>
+    <span>this place since</span>
+    <br>
+    <button ion-button icon-right block class='threeButton' (click)="picker.open()" style="font-size:1.9rem">
+      <ion-datetime #picker id="select" max="2025-12-31" [(ngModel)]="defaultDate" (ionChange)="datePickerCallback()" ></ion-datetime>
+      <ion-icon name="calendar"></ion-icon>
+    </button>
+    <p id="demo"></p>
+  </div>
+
+</ion-content>
