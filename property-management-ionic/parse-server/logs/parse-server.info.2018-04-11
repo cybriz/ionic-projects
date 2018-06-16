@@ -1,0 +1,5 @@
+{"error":{"code":205,"message":"No user found with email haa."},"level":"error","message":"Error generating response. ParseError { code: 205, message: 'No user found with email haa.' }","timestamp":"2018-04-11T01:29:00.459Z"}
+{"code":205,"message":"No user found with email haa.","level":"error","timestamp":"2018-04-11T01:29:00.522Z"}
+{"error":{"code":205,"message":"No user found with email hha@gmail.com."},"level":"error","message":"Error generating response. ParseError {\n  code: 205,\n  message: 'No user found with email hha@gmail.com.' }","timestamp":"2018-04-11T01:29:16.447Z"}
+{"code":205,"message":"No user found with email hha@gmail.com.","level":"error","timestamp":"2018-04-11T01:29:16.447Z"}
+{"code":209,"message":"invalid session token","level":"error","timestamp":"2018-04-11T02:43:52.971Z"}

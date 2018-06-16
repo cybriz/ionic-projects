@@ -1,0 +1,12 @@
+{"error":{"code":205,"message":"No user found with email wongyewloke@gmail.com."},"level":"error","message":"Error generating response. ParseError {\n  code: 205,\n  message: 'No user found with email wongyewloke@gmail.com.' }","timestamp":"2018-04-04T08:43:40.555Z"}
+{"code":205,"message":"No user found with email wongyewloke@gmail.com.","level":"error","timestamp":"2018-04-04T08:43:40.556Z"}
+{"error":{"code":142,"message":"Password does not meet the Password Policy requirements."},"level":"error","message":"Error generating response. ParseError {\n  code: 142,\n  message: 'Password does not meet the Password Policy requirements.' }","timestamp":"2018-04-04T08:44:28.454Z"}
+{"code":142,"message":"Password does not meet the Password Policy requirements.","level":"error","timestamp":"2018-04-04T08:44:28.455Z"}
+{"error":{"code":142,"message":"Password does not meet the Password Policy requirements."},"level":"error","message":"Error generating response. ParseError {\n  code: 142,\n  message: 'Password does not meet the Password Policy requirements.' }","timestamp":"2018-04-04T08:44:43.188Z"}
+{"code":142,"message":"Password does not meet the Password Policy requirements.","level":"error","timestamp":"2018-04-04T08:44:43.190Z"}
+{"error":{"code":142,"message":"Password does not meet the Password Policy requirements."},"level":"error","message":"Error generating response. ParseError {\n  code: 142,\n  message: 'Password does not meet the Password Policy requirements.' }","timestamp":"2018-04-04T08:44:50.229Z"}
+{"code":142,"message":"Password does not meet the Password Policy requirements.","level":"error","timestamp":"2018-04-04T08:44:50.230Z"}
+{"error":{"code":142,"message":"Password does not meet the Password Policy requirements."},"level":"error","message":"Error generating response. ParseError {\n  code: 142,\n  message: 'Password does not meet the Password Policy requirements.' }","timestamp":"2018-04-04T08:45:00.073Z"}
+{"code":142,"message":"Password does not meet the Password Policy requirements.","level":"error","timestamp":"2018-04-04T08:45:00.073Z"}
+{"error":{"code":142,"message":"Password does not meet the Password Policy requirements."},"level":"error","message":"Error generating response. ParseError {\n  code: 142,\n  message: 'Password does not meet the Password Policy requirements.' }","timestamp":"2018-04-04T08:45:34.477Z"}
+{"code":142,"message":"Password does not meet the Password Policy requirements.","level":"error","timestamp":"2018-04-04T08:45:34.477Z"}
