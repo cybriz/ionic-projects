@@ -16,6 +16,6 @@
 
 <img src="https://media.giphy.com/media/TJ7VbMEyn0crO0WHvw/giphy.gif"/>
 
-<h3>Preview for parse-server and mongodb for property-management app</h3>
+<h3>+Added preview for parse-server and mongodb for property-management app</h3>
 
 <img src="https://media.giphy.com/media/1UPWXwocpzyIU8bGpr/giphy.gif"/>
