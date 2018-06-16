@@ -1,17 +1,21 @@
 # ionic-projects
 
-<h2>Preview for Church-app with push notification using ionic native - oneSignal</h2>
+<h4>Preview for Church-app with push notification using ionic native - oneSignal</h4>
 
 <img src="https://media.giphy.com/media/ll5QJ1jnNcXyax1zqT/giphy.gif"/>
 
-Preview for E-commerce-list app
+<h4>Preview for E-commerce-list app</h4>
 
 <img src="https://media.giphy.com/media/46fdybJNCkavzvVnEN/giphy.gif"/>
 
-Preview for theater movie app
+<h4>Preview for theater movie app</h4>
 
 <img src="https://media.giphy.com/media/eexxSe4ZhWIDU5m5W8/giphy.gif"/>
 
-Preview for Property-management app
+<h4>Preview for Property-management app</h4>
 
 <img src="https://media.giphy.com/media/TJ7VbMEyn0crO0WHvw/giphy.gif"/>
+
+<h5>Preview for parse-server and mongodb for property-management app 
+
+<img src="https://media.giphy.com/media/1UPWXwocpzyIU8bGpr/giphy.gif"/>
