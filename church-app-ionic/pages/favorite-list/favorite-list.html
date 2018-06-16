@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar color="head">
+    <ion-buttons left>
+      <button ion-button icon-only menuToggle="left">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Favorite List</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+      <ion-item-sliding *ngFor="let favorite of favorites">
+          <button ion-item (click)="itemTapped(favorite)">
+              <ion-thumbnail item-left>
+                  <img src="{{favorite.concert.artistImage}}"/>
+              </ion-thumbnail>
+              <h2>{{favorite.concert.name}}</h2>
+              <p>{{favorite.concert.time.subtitle}}</p>
+              <!-- <p>{{favorite.city}}, {{favorite.property.state}} ∙ {{favorite.property.price}}</p> -->
+          </button>
+          <ion-item-options>
+              <button danger (click)="deleteItem(favorite)">Delete</button>
+          </ion-item-options>
+      </ion-item-sliding>
+      <p id="addMsg" *ngIf="favorites.length === 0 ">Please Add Your Favorite Item</p>
+  </ion-list>
+</ion-content>
+

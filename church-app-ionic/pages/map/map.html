@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar color="head">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <input id="start" placeholder=" Search for Your Location..." autocorrect="off" autocapitalize="off" spellcheck="off" type="text"
+      class="form-control" #source>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div id='mapView' #mapView></div>
+  <!-- <ion-fab right bottom middle [hidden]="source > 0">
+        <button class="pop-in"
+                [ngClass]="{ 'expand' : expanded, 'contract': contracted }"
+                ion-fab mini
+                (click)="expand()">
+          <ion-icon [hidden]="!showIcon" name="ios-arrow-forward"></ion-icon>
+        </button>
+      </ion-fab> -->
+  <!-- <div id="floating-panel">
+      <span id="total"></span>
+    </div> -->
+</ion-content>
+
+<ion-pullup (onExpand)="footerExpanded()" (onCollapse)="footerCollapsed()" [(state)]="footerState">
+  <ion-pullup-tab [footer]="pullup" (tap)="toggleFooter()">
+    <ion-icon name="arrow-up" *ngIf="footerState == 0"></ion-icon>
+    <ion-icon name="arrow-down" *ngIf="footerState == 1"></ion-icon>
+  </ion-pullup-tab>
+  <ion-toolbar color="primary" (tap)="toggleFooter()">
+    <ion-title>Details</ion-title>
+  </ion-toolbar>
+  <ion-content>
+    <div id="floating-panel">
+      <span id="total"></span>
+    </div>
+  </ion-content>
+</ion-pullup>

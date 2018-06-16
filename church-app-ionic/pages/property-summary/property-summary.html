@@ -1,0 +1,33 @@
+<ion-header>
+    <ion-navbar showBackButton>
+    <ion-title>
+      <span>Property Summary</span>
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button color="primary" (click)="add()">
+        <span>Add</span>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <br>
+  <h4>Selected:</h4>
+  <div id="map9"></div>
+  <br>
+  <br>
+  <span class="address">{{"Address: "}} </span>
+  <br>
+  <span class="address">{{address || "4-6, Jalan Permas 1/2, Bandar Baru Permas Jaya, 81750 Johor Bahru, Johor, Malaysia"}}</span>
+  <br>
+  <br>
+  <span class="spacing">{{"Building Name: "}}{{name_val || "Chen-Li Presbyterian Church"}}</span>
+  <br>
+  <br>
+ <span class="spacing">{{"latitude: "+lat}}</span>
+  <br>
+  <br>
+  <span class="spacing">{{"longtitude: "+lng}}</span>
+
+</ion-content>

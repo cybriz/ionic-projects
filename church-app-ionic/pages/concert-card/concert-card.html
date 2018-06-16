@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-navbar transparent>
+    <ion-buttons left>
+      <button ion-button icon-only menuToggle="left">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Upcoming events</ion-title>
+    <!-- <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="md-heart-outline"></ion-icon>
+      </button>
+    </ion-buttons> -->
+  </ion-navbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <section margin-top margin-bottom>
+     <ion-slides autoplay="2000"> 
+      <ion-slide *ngFor="let favorite of favorites">
+        <ion-card> 
+          <div class="the-header">
+            <div class="header-text">
+              <h1>{{favorite.artistName}}</h1>
+              <p id="value">{{favorite.name}}</p>
+            </div>
+            <div class="background" [style.background]="favorite.color">
+              <img [src]="favorite.artistImage"/>
+            </div>
+            <button ion-fab>
+              <ion-icon name="musical-notes"></ion-icon>
+            </button>
+          </div>
+          <div class="the-content" padding>
+            <h2>VIP PASS</h2>
+            <div padding>
+                <small>
+                  觀眾入場時間: 稍後公佈
+                  “Price Tag”、“Domino” 和 “Bang Bang” 等大熱歌曲背後的白金銷量實力唱作女聲Jessie J宣佈即將來港，於9月22日假亞洲國際博覽館Hall 10舉行一場THE R.O.S.E. TOUR演唱會
+                </small>
+            </div>
+            <h2>SOMETHING ELSE</h2>
+            <div padding>
+                <small>
+                    全企位門票由港幣698元起，將於2018年6月8日（星期五）上午10時起於www.eraslive.com公開發售。
+                </small>
+            </div>
+            <button ion-button block (click)="addFavorite(favorite)" [style.background]="favorite.color">
+              Favorite&nbsp;&nbsp;<ion-icon name="md-heart-outline"></ion-icon>
+            </button>
+          </div> 
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </section>
+</ion-content>
