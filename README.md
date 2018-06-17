@@ -6,7 +6,7 @@
 
 <h3>Preview for E-commerce-list app</h3>
 
-<img src="https://media.giphy.com/media/46fdybJNCkavzvVnEN/giphy.gif"/>
+<img src="https://media.giphy.com/media/46fdybJNCkavzvVnEN/giphy.gif"/>(https://youtu.be/nitqJWEjG_Q)
 
 <h3>Preview for theater movie app</h3>
 
