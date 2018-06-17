@@ -1,6 +1,6 @@
 # ionic-projects
 
-<h3>Preview for Church-app with push notification using ionic native - oneSignal</h3>
+<h3 style="color: rgb(201, 76, 76)">Preview for Church-app with push notification using ionic native - oneSignal</h3>
 
 [<img src="https://media.giphy.com/media/ll5QJ1jnNcXyax1zqT/giphy.gif"/>](https://youtu.be/fiVNtKLMIdU)
 
