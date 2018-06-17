@@ -1,6 +1,6 @@
-# ionic-projects
+# ionic3-projects (Typescript)
 
-<span style="color:orange;"><h3>Preview for Church-app with push notification using ionic native - oneSignal</h3></span>
+<h3>Preview for Church-app with push notification using ionic native - oneSignal</h3>
 
 [<img src="https://media.giphy.com/media/ll5QJ1jnNcXyax1zqT/giphy.gif"/>](https://youtu.be/fiVNtKLMIdU)
 
@@ -20,7 +20,3 @@
 
 [<img src="https://media.giphy.com/media/1UPWXwocpzyIU8bGpr/giphy.gif"/>](https://youtu.be/yngze-S4YzU)
 
-<span style="color:orange;">Word up</span>
- <b style='color:red'>red words</b>
- <p style='color:red'>This is some red text.</p>
-<font color="red">This is some text!</font>
