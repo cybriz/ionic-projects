@@ -21,3 +21,6 @@
 [<img src="https://media.giphy.com/media/1UPWXwocpzyIU8bGpr/giphy.gif"/>](https://youtu.be/yngze-S4YzU)
 
 <span style="color:orange;">Word up</span>
+ <b style='color:red'>red words</b>
+ <p style='color:red'>This is some red text.</p>
+<font color="red">This is some text!</font>
