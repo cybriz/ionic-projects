@@ -1,6 +1,6 @@
 # ionic-projects
 
-<h3 style="color:blue;">Preview for Church-app with push notification using ionic native - oneSignal</h3>
+<h3>Preview for Church-app with push notification using ionic native - oneSignal</h3>
 
 [<img src="https://media.giphy.com/media/ll5QJ1jnNcXyax1zqT/giphy.gif"/>](https://youtu.be/fiVNtKLMIdU)
 
@@ -19,3 +19,9 @@
 <h3>+Added preview with parse-server and mongodb for property-management app</h3>
 
 [<img src="https://media.giphy.com/media/1UPWXwocpzyIU8bGpr/giphy.gif"/>](https://youtu.be/yngze-S4YzU)
+
+<style>
+body {background-color: powderblue;}
+h3   {color: blue;}
+p    {color: red;}
+</style>
