@@ -1,6 +1,6 @@
 # ionic-projects
 
-<h3>Preview for Church-app with push notification using ionic native - oneSignal</h3>
+<h3>Preview for Church-app with push notification using ionic native - oneSignal</h3> `#f03c15`
 
 [<img src="https://media.giphy.com/media/ll5QJ1jnNcXyax1zqT/giphy.gif"/>](https://youtu.be/fiVNtKLMIdU)
 
@@ -20,8 +20,3 @@
 
 [<img src="https://media.giphy.com/media/1UPWXwocpzyIU8bGpr/giphy.gif"/>](https://youtu.be/yngze-S4YzU)
 
-<style>
-body {background-color: powderblue;}
-h3   {color: blue;}
-p    {color: red;}
-</style>
